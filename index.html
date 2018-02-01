@@ -1,55 +1,40 @@
 </!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootsrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>GIF Dance Battle</title>
+	<!-- Favicon -->
+	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+	<!-- Custom Font - Rock Salt -->
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+	<!-- Our custom CSS style sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Our JavaScript file -->
+	<script type="text/javascript" src="apps.js"></script>
 </head>
 <body>
+	<div class = "container">
+		<header class="header page-header">It's a Dance Off!</header>
+		<!-- Pre-selected button choices -->
+		<label>Boogie down:</label>
+		<div class="btn-group">
+			<div id="danceMove"></div>
+		</div>
+		<!-- User determines search term -->
+		<form class="form">
+			<label>Or dance to your own beat:</label>
+			<div class="form-inline">
+				<input type="text" id="userDance" placeholder="ex: 'salsa' or 'tap dance'">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		<div id="gifs-appear-here"></div>
+	</div>
 
-	<script type="text/javascript">
-		// On page load:
-			// Set variables
-				// array of search terms (button titles)
-			// Functions
-				// dynamically create search buttons
-					// clear previous buttons
-					// for loop through button titles
-						// create jQuery button
-						// add attribute to button equal to the button title
-						// put button title in the button(.text, or .html)
-						// append button to page
-				// when user clicks on a button funciton
-					// prevent default
-					// get attribute of the button clicked and store as variable
-					// clear out old images (.empty)
-					// get the image with an ajax call to giphy
-						// method: GET
-						// url: "https://api.giphy.com/v1/gifs/search?q" + search_term + "&api_key=" + YOUR API KEY
-						// .then
-							// loop through response.data
-								// create a jquery div
-								// create a jquery img
-								// set src attribute of the image to be the still image (response.data[i].images.original_still.url)
-								// set data-state = "still"
-								// add animated url = (response.data[i].images.original.url)
-								// set
-								// create a jquery p
-								// put the rating from response into p (respnose.data[i].rating)
-								// append jquery img and jquery p to div
-								// append jquery div to the page
-				//on click of form submit button - funciton
-					// create variable of user input text field
-					// push to array (buttonTitles)
-					// run display buttons function
-				// on click of image div - function
-					// set variable = image clicked data-state attribute
-					// if (still)
-						// set src attribute to be the animated url
-						// set data-state attribute to be animated
-					// else (animated)
-						// set src attr to be still url
-						// set data-state attr to be still
-
-	</script>
 
 </body>
 </html>

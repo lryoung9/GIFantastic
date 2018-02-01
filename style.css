@@ -1,0 +1,18 @@
+body {
+	background-image: url("disco-lights.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	color: white;
+}
+
+header {
+	font-family: 'Rock Salt', cursive;
+	color: white;
+	font-size: 38px;
+	letter-spacing: 5px;
+}
+
+input {
+	color: black;
+}
