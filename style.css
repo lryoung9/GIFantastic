@@ -25,3 +25,7 @@ img {
 .clearfix {
 	overflow: hidden;
 }
+
+form, .btn-group {
+	margin-bottom: 20px;
+}
