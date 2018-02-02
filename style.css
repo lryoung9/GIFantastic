@@ -16,3 +16,12 @@ header {
 input {
 	color: black;
 }
+
+img {
+	display: inline-block;
+	margin: auto;
+}
+
+.clearfix {
+	overflow: hidden;
+}

@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Bootsrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<title>GIF Dance Battle</title>
-	<!-- Favicon -->
-	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
-	<!-- Custom Font - Rock Salt -->
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
-	<!-- Our custom CSS style sheet -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- Our JavaScript file -->
-	<script type="text/javascript" src="apps.js"></script>
-</head>
-<body>
-	<div class = "container">
-		<header class="header page-header">It's a Dance Off!</header>
-		<!-- Pre-selected button choices -->
-		<label>Boogie down:</label>
-		<div class="btn-group">
-			<div id="danceButtons"></div>
-		</div>
-		<!-- User determines search term -->
-		<form class="form">
-			<label>Or dance to your own beat:</label>
-			<div class="form-inline">
-				<input type="text" id="userDance" placeholder="ex: 'salsa' or 'tap dance'">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootsrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title>GIF Dance Battle</title>
+		<!-- Favicon -->
+		<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+		<!-- Custom Font - Rock Salt -->
+		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+		<!-- Our custom CSS style sheet -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Our JavaScript file -->
+		<script type="text/javascript" src="apps.js"></script>
+	</head>
+	<body>
+		<div class = "container clearfix">
+			<header class="header page-header">It's a Dance Off!</header>
+			<!-- Pre-selected button choices -->
+			<label>Boogie down:</label>
+			<div class="btn-group">
+				<div id="danceButtons"></div>
 			</div>
-			<button id="submit" type="submit" class="btn btn-default">Submit</button>
-		</form>
-		<div id="gifs-appear-here"></div>
-	</div>
-
-
-</body>
+			<!-- User determines search term -->
+			<form class="form">
+				<label>Or dance to your own beat:</label>
+				<div class="form-inline">
+					<input type="text" id="userDance" placeholder="ex: 'salsa' or 'tap dance'">
+				</div>
+				<button id="submit" type="submit" class="btn btn-default">Submit</button>
+			</form>
+			<div id="gifs-appear-here"></div>
+		</div>
+	</body>
 </html>

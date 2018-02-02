@@ -42,7 +42,7 @@ function addOnClickHandlers() {
 		// clear out old images (.empty)
 		$("#gifs-appear-here").empty();
 		// get the image with an ajax call to giphy
-		var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=zT7aQEGSK8nksDxzzfDMlpXJw6WHQfKD&limit=10&q=" + danceChoice ;
+		var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=zT7aQEGSK8nksDxzzfDMlpXJw6WHQfKD&limit=9&q=" + danceChoice ;
 		console.log('being added');
 		$.ajax({
 			// query URL
@@ -56,6 +56,7 @@ function addOnClickHandlers() {
 			for (var i = 0; i < results.length; i++) {
 				// create a jquery div
 				var danceDiv = $("<div>");
+				danceDiv.addClass("col-md-4")
 				// create a jquery img
 				var image = $("<img>")
 				// set src attribute of the image to be the still image (response.data[i].images.original_still.url)
